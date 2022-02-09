@@ -1,13 +1,13 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { createUseStyles } from "react-jss";
 
-export default makeStyles(theme => ({
+export const useStyles = createUseStyles({
   root: {
     "& .MuiTextField-root": {
-      margin: theme.spacing(1),
+      margin: 8,
     },
   },
   paper: {
-    padding: theme.spacing(2),
+    padding: 16,
   },
   form: {
     display: "flex",
@@ -21,4 +21,4 @@ export default makeStyles(theme => ({
   buttonSubmit: {
     marginBottom: 11,
   },
-}));
+});

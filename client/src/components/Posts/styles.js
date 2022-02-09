@@ -1,14 +1,14 @@
-import { makeStyles } from "@material-ui/core/styles";
+import { createUseStyles } from "react-jss";
 
-export default makeStyles(theme => ({
+export const useStyles = createUseStyles({
   mainContainer: {
     display: "flex",
     alignItems: "center",
   },
   smMargin: {
-    margin: theme.spacing(1),
+    margin: 8,
   },
   actionDiv: {
     textAlign: "center",
   },
-}));
+});
